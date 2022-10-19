@@ -1,0 +1,8 @@
+C:\Users\I5_10600K\Desktop\atividade1AVMB\atividade1AVMB\bin\Debug\atividade1AVMB.exe.config
+C:\Users\I5_10600K\Desktop\atividade1AVMB\atividade1AVMB\bin\Debug\atividade1AVMB.exe
+C:\Users\I5_10600K\Desktop\atividade1AVMB\atividade1AVMB\bin\Debug\atividade1AVMB.pdb
+C:\Users\I5_10600K\Desktop\atividade1AVMB\atividade1AVMB\obj\Debug\atividade1AVMB.csproj.AssemblyReference.cache
+C:\Users\I5_10600K\Desktop\atividade1AVMB\atividade1AVMB\obj\Debug\atividade1AVMB.csproj.SuggestedBindingRedirects.cache
+C:\Users\I5_10600K\Desktop\atividade1AVMB\atividade1AVMB\obj\Debug\atividade1AVMB.csproj.CoreCompileInputs.cache
+C:\Users\I5_10600K\Desktop\atividade1AVMB\atividade1AVMB\obj\Debug\atividade1AVMB.exe
+C:\Users\I5_10600K\Desktop\atividade1AVMB\atividade1AVMB\obj\Debug\atividade1AVMB.pdb
