@@ -1,3 +1,9 @@
+/*
+2 - Escrever um algoritmo para ler a quantidade de horas aula dadas por 
+dois professores e o valor por hora recebido por cada um deles. Mostrar 
+na tela qual dos professores tem o maior salário total.
+*/
+
 using System;
 
 namespace atividade1AVMB

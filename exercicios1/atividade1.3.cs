@@ -1,3 +1,10 @@
+/*
+3 - Escreva um programa que pede para o usuário digitar um valor 
+entre 1 e 12, e então mostre na tela o mês correspondente. Caso o usuário 
+digite um valor fora do intervalo, mostre uma mensagem indicando que é um 
+mês inválido.
+*/
+
 using System;
 
 namespace atividade1AVMB

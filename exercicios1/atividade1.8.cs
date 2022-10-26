@@ -1,3 +1,16 @@
+/*
+8 - Um comerciante calcula o lucro da venda baseado no valor da compra dos clientes 
+de acordo com os itens a seguir:
+
+•	Valor da Compra < R$ 10,00  então o Lucro é de 70% 
+•	R$ 10,00 ≤ Valor da Compra < R$ 30,00 então o Lucro é de 50% 
+•	R$ 30,00 ≤ Valor da Compra < R$ 50,00 então o Lucro é de 40% 
+•	Valor da Compra ≥ R$ 50,00 então o Lucro é de 30% 
+
+Criar um algoritmo que leia o valor da compra e imprima uma mensagem indicando de 
+quantos % é o lucro e o valor.
+*/
+
 using System;
 
 namespace atividade1AVMB

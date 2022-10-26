@@ -1,3 +1,8 @@
+/* 
+1 - Escrever um algoritmo para ler quatro valores inteiros, 
+calcular a sua média, e escrever na tela os que são superiores à média.
+*/
+
 using System;
 
 namespace atividade1AVMB

@@ -1,3 +1,9 @@
+/*
+5 - Escreva um programa que peça para o usuário digitar uma letra, e então 
+o programa imprime na tela se a letra é uma vogal ou consoante. Utilize no 
+máximo 6 cases em um switch-case para resolver esse exercício.
+*/
+
 using System;
 
 namespace atividade1AVMB

@@ -1,3 +1,9 @@
+/*
+7 - Escreva um algoritmo para pesquisa de renda per capita que leia o valor da 
+renda familiar e o número de integrantes da família. Calcule o valor da renda per 
+capita da família. 
+*/
+
 using System;
 
 namespace atividade1AVMB
