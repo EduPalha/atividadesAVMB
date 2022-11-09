@@ -1,0 +1,21 @@
+C:\Projetos\Estudos\Desafio\Entidades\bin\Release\Entidades.dll
+C:\Projetos\Estudos\Desafio\Entidades\bin\Release\Entidades.pdb
+C:\Projetos\Estudos\Desafio\Entidades\obj\Release\Entidades.csprojAssemblyReference.cache
+C:\Projetos\Estudos\Desafio\Entidades\obj\Release\Entidades.csproj.CoreCompileInputs.cache
+C:\Projetos\Estudos\Desafio\Entidades\obj\Release\Entidades.dll
+C:\Projetos\Estudos\Desafio\Entidades\obj\Release\Entidades.pdb
+C:\Users\laboratorio\Downloads\RPG CSHARP\Desafio\Entidades\bin\Release\Entidades.dll
+C:\Users\laboratorio\Downloads\RPG CSHARP\Desafio\Entidades\bin\Release\Entidades.pdb
+C:\Users\laboratorio\Downloads\RPG CSHARP\Desafio\Entidades\bin\Release\itextsharp.dll
+C:\Users\laboratorio\Downloads\RPG CSHARP\Desafio\Entidades\bin\Release\PdfSharp.Charting.dll
+C:\Users\laboratorio\Downloads\RPG CSHARP\Desafio\Entidades\bin\Release\PdfSharp.dll
+C:\Users\laboratorio\Downloads\RPG CSHARP\Desafio\Entidades\bin\Release\itextsharp.xml
+C:\Users\laboratorio\Downloads\RPG CSHARP\Desafio\Entidades\bin\Release\PdfSharp.xml
+C:\Users\laboratorio\Downloads\RPG CSHARP\Desafio\Entidades\bin\Release\PdfSharp.Charting.xml
+C:\Users\laboratorio\Downloads\RPG CSHARP\Desafio\Entidades\bin\Release\de\PdfSharp.resources.dll
+C:\Users\laboratorio\Downloads\RPG CSHARP\Desafio\Entidades\bin\Release\de\PdfSharp.Charting.resources.dll
+C:\Users\laboratorio\Downloads\RPG CSHARP\Desafio\Entidades\obj\Release\Entidades.csproj.AssemblyReference.cache
+C:\Users\laboratorio\Downloads\RPG CSHARP\Desafio\Entidades\obj\Release\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\laboratorio\Downloads\RPG CSHARP\Desafio\Entidades\obj\Release\Entidades.csproj.CopyComplete
+C:\Users\laboratorio\Downloads\RPG CSHARP\Desafio\Entidades\obj\Release\Entidades.dll
+C:\Users\laboratorio\Downloads\RPG CSHARP\Desafio\Entidades\obj\Release\Entidades.pdb

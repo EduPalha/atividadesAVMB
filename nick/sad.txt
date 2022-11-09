@@ -1,0 +1,209 @@
+1 - Identifique e descreva as razões pelas quais os Sistemas de Informação são nos dias de hoje tão importantes para as empresas. 
+
+
+
+Redução de custos Operacionais, maior acesso as Informação, maior agilidade de acesso, melhoria na produtividade setorial e global
+
+estímulo a interação entre os tomadores de decisões, fornecimento de projeções de efeitos de decisões, maior organização, melhoria 
+
+da adaptação a imprevistos.
+
+
+
+
+
+
+
+2 - O que é um Sistema de Informação? 
+
+
+
+Sistema de informação é o modelo, automatizado ou manual, de processos responsáveis por coletar e transmitir dados que sejam úteis ao 
+
+desenvolvimento de produtos ou serviços das empresas, organizações e de demais projetos.
+
+
+
+
+
+
+
+3 - Porque razão algumas empresas obtêm maior valor dos seus Sistemas de Informação que outras?
+
+
+
+O sistema de informação é responsável pela coleta, processamento, armazenagem, análise e distribuição de informações que tem um determinado 
+
+objetivo dentro de um contexto. Esse sistema, como qualquer outro possui inputs e outputs. Para que se tenha um sistema operando de forma 
+
+satisfatória é preciso compreender que as informações surgem a partir de dados organizados e processados de forma a proporcionar valor às 
+
+atividades da organização. Essas informações dão suporte à tomada de decisão pelos gestores, realizado seus trabalhos com mais rapidez.
+
+Algumas Empresas acabam fazendo melhor uso evitando dispersão, evitando fontes não confiáveis e recebendo com agilidade. Em outros casos as empresas
+
+não sabem como usar os dados obtidos.
+
+ 
+
+
+
+
+
+
+
+4 - Quais são os desafios impostos ao nível de gestão quanto ao desenvolvimento, operação e manutenção de Sistemas de Informação? 
+
+tomar decisões corretas de acordo com as informações obtidas.
+
+Ajustar a Tecnologia á organização: usar recursos de TI alinhados com o plano empresarial e os processos de negocio de forma que 
+
+possa servir a empresa de acordo com os recursos que possui.
+
+
+
+
+
+
+
+5 - Identifique e descreva os três níveis hierárquicos de uma organização. Que tipos de Sistemas de Informação dão apoio aos diferentes níveis? 
+
+operacional - sistemas básicos de cadastros, vendas, e consultas simples em geral sistemas que facilitam na produção da organização
+
+
+
+tático - sistemas para uso financeiro, recursos humanos, linhas diferenciadas de produtos e etc
+
+
+
+estratégico - sistemas que analisam as mudanças de comportamento do consumidor e qual serão as estratégias políticas e financeiras para 
+
+adaptar-se as adversidades encontradas
+
+
+
+
+
+
+
+6 - Identifique e descreva os principais Sistemas de Informação numa organização. 
+
+Sistema de Processamento de Transações - monitoram, coletam, armazenam e processam dados gerados em todas as transações da empresa
+
+
+
+SIG - Sistemas de Informações Gerenciais -oferecem informações na forma de relatórios aos gerentes de nível intermediário, como apoio
+
+ no planejamento, na organização e no controle de operações
+
+ 
+
+SAD - Sistema de Apoio à Decisão - É um sistema de informação computadorizado que combina modelos e dados em uma tentativa de resolver 
+
+os problemas semi-estruturados e alguns problemas não-estruturados, com intenso envolvimento do usuário.
+
+
+
+SIE - Sistema de Informação Executiva - ma tecnologia computadorizada projetada em resposta às necessidades específicas dos altos executivos.
+
+ Fornece acesso rápido a informações atuais e acesso aos relatórios gerencias. Um SIE é bastante fácil de usar, baseia-se em gráficos.
+
+
+
+
+
+
+
+7 - Quais as características de um Sistema de Apoio à decisão (SAD)? 
+
+Os Sads podem examinar várias alternativas muito rapidamente
+
+Podem realizar uma análise de risco sistemático
+
+Podem ser integrados a sistemas de comunicação e bancos de dados
+
+Podem ser usados para apoiar o trabalho em grupo
+
+Flexível e adaptável a condições mutantes e as diversas exigências das diferentes situações de tomada de decisão.
+
+busca descobrir o valor das entradas necessárias para alcançar determinado nível de saída
+
+
+
+
+
+
+
+8 - Porque razão existe uma resistência considerável à introdução de Sistemas de Informação nas organizações? 
+
+A implantação de sistemas normalmente significa mudanças e, na maioria das vezes, por uma tendência natural do ser humano, 
+
+as pessoas envolvidas nesse processo tornam-se resistentes à mudança. Essa mudança muitas vezes representa uma ameaça ao emprego, 
+
+a quebra de uma rotina, a criação de uma zona de desconforto, novos processos que alteram a rotina diária na qual o indivíduo está acostumado. 
+
+E as pessoas são de extrema importância para as organizações. Podemos adquirir um sistema de última geração, mas de qualquer forma, 
+
+precisamos do ser humano para fazer a operacionalização desse sistema e a gestão correta do mesmo.
+
+
+
+
+
+
+
+9 - De que forma é que os investimentos em Sistemas de Informação podem auxiliar na redução de custos de uma organização? 
+
+O investimento em um bom sistema de informação pode resultar nos seguintes beneficios.
+
+Geração eficiente de relatórios
+
+Direcionamento de possíveis melhorias
+
+Aumento da produtividade
+
+Menor desperdício
+
+Maior controle de prazos
+
+Atualização imediata
+
+Quadro de funcionários mais enxuto
+
+Diminuição de erros e fraudes
+
+Melhor a gestão do estoque
+
+Redução do retrabalho da equipe
+
+Facilidade de controle do negócio
+
+Aumento da eficiência da organização
+
+Maior compartilhamento de informações
+
+Se bem usado, o preço do sistema é fácilmente retornado pelo sistema
+
+
+
+
+
+10 - O que são Bases de Dados e Sistemas de Gestão de Bases de Dados?
+
+Base de Dados é onde ficam os dados, tabelas, colunas...
+
+SGBD é o que gerencia esses dados, como por exemplo o mysql
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+11 - Diferencie Tecnologia de Informação de Sistemas de Informação.

@@ -1,0 +1,8 @@
+C:\Users\PICHAU\Desktop\Forza\RPG\Desafio\NegocioNG\bin\Debug\NegocioNG.exe.config
+C:\Users\PICHAU\Desktop\Forza\RPG\Desafio\NegocioNG\bin\Debug\NegocioNG.exe
+C:\Users\PICHAU\Desktop\Forza\RPG\Desafio\NegocioNG\bin\Debug\NegocioNG.pdb
+C:\Users\PICHAU\Desktop\Forza\RPG\Desafio\NegocioNG\obj\Debug\NegocioNG.csprojAssemblyReference.cache
+C:\Users\PICHAU\Desktop\Forza\RPG\Desafio\NegocioNG\obj\Debug\NegocioNG.Properties.Resources.resources
+C:\Users\PICHAU\Desktop\Forza\RPG\Desafio\NegocioNG\obj\Debug\NegocioNG.csproj.GenerateResource.cache
+C:\Users\PICHAU\Desktop\Forza\RPG\Desafio\NegocioNG\obj\Debug\NegocioNG.exe
+C:\Users\PICHAU\Desktop\Forza\RPG\Desafio\NegocioNG\obj\Debug\NegocioNG.pdb
