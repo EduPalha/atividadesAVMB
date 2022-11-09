@@ -1,0 +1,35 @@
+div {
+    width: 120px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center; 
+}
+#circle1 {
+    position: absolute;
+    background: blue;
+    padding-top: 25px;
+    top: 40px;
+    left: 50px;
+}
+#circle2 {
+    position: absolute;
+    background: purple;
+    padding-top: 25px;
+    top: 40px;
+    right: 50px;
+}
+#circle3 {
+    position: absolute;
+    background: green;
+    padding-top: 25px;
+    bottom: 40px;
+    right: 50px;
+}
+#circle4 {
+    position: absolute;
+    background: red;
+    padding-top: 25px;
+    bottom: 40px;
+    left: 50px;
+}
+

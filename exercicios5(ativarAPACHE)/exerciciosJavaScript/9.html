@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Ex9</title>
+    <meta charset="utf-8" />
+</head>
+
+<body>
+    <form id="formcliente">
+
+        <h1>Cadastro:</h1>
+
+        <p class="nome">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nomeid" required="required" name="nome" />
+        </p>
+        <p class="senha">
+            <label for="senha1">Senha:</label>
+            <input type="text" id="senha1" onclick="s1()" required="required" name="fone" />
+
+        </p>
+        <p class="confirmasenha">
+            <label for="senha2">Senha:</label>
+            <input type="text" id="senha2" onclick="s2()" required="required" name="fone" />
+        </p>
+
+        <p class="submit">
+            <input type="submit" onclick="Enviar();" value="Enviar" />
+        </p>
+
+    </form>
+    <script>
+        // <input type="submit" onclientclick="Enviar();" value="Enviar" />      tentei usar em cima.....
+        function Enviar() {
+            var campo1 = document.getElementById('senha1');
+            var campo2 = document.getElementById('senha2');
+            if (campo1.value != campo2.value) {
+                alert("Senhas não conferem!");
+                if (Number(campo1.value) <= 6 && Number(campo1.value) >= 10) {
+                    alert("Insira um senha entre 6 e 10 elementos!");
+                }
+
+            }
+        }
+    </script>
+</body>
+
+</html>

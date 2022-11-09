@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Ex8</title>
+    <meta charset="utf-8">
+</head>
+<a href="javascript:mudaTamanho('texto', -1);">Diminuir</a>
+<a href="javascript:mudaTamanho('texto', 1);">Aumentar</a>
+
+<body id="corpo">
+    <div style="font-size: 11px;" id="texto">
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur scelerisque purus ut pede. Ut pulvinar
+            diam vitae tellus. Nunc ultricies. Nam rhoncus justo vel dui. Morbi suscipit enim. Praesent dui dui,
+            tincidunt eget, feugiat vel, tincidunt vel, elit. Curabitur tempus consequat nunc. Aliquam erat volutpat.
+            Vivamus a massa non libero posuere blandit. Nulla ut velit quis leo luctus tincidunt. Vestibulum eget leo in
+            augue ornare fringilla. Suspendisse suscipit dui. </p>
+        <p>Nullam ultrices justo eget mi. Curabitur porta augue eget magna. Nam imperdiet, ipsum eu aliquet interdum,
+            justo ipsum pulvinar quam, quis convallis mi sapien eu ante. Etiam ac sem. Ut bibendum. Nulla facilisi.
+            Vestibulum odio. Sed accumsan. Donec a dui. Cras lorem augue, egestas vel, accumsan vel, elementum sit amet,
+            nisl. Cras id dui. Sed nulla ipsum, pulvinar et, suscipit a, vehicula eu, arcu. Fusce auctor nibh eget
+            risus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum
+            vitae ante in odio dapibus lobortis. </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus venenatis a nulla in rhoncus. Mauris
+            imperdiet
+            tortor a arcu varius posuere. Maecenas neque sapien, interdum id purus id, venenatis ultrices sem. Donec ac
+            dictum mauris. Morbi fermentum ac sapien in imperdiet. Integer sit amet sapien ac ex tristique pharetra.
+            Nullam
+            fermentum fringilla venenatis. Aenean sed neque euismod sapien consectetur convallis sed nec mi. Etiam nisi
+            arcu, consequat interdum tempor in, gravida sit amet ipsum. Maecenas pellentesque placerat elit id
+            venenatis.</p>
+        <p id="paragrafo">
+            Nam viverra in nisl nec gravida. Donec eu leo hendrerit, rhoncus neque eu, fringilla mi. Fusce ut tellus
+            venenatis, fringilla metus eu, varius turpis. Integer fringilla risus dolor, nec porta turpis vestibulum
+            aliquet. Aliquam ut molestie felis. Maecenas et nunc odio. Nulla facilisi. In pharetra fringilla ligula, sit
+            amet sodales dui lacinia vitae. Proin vel enim id sem dapibus sollicitudin. Proin mollis justo tellus, vitae
+            venenatis leo condimentum ac. Pellentesque congue felis a velit volutpat ultricies. Etiam sodales eget enim
+            vel
+            facilisis. Mauris rutrum mi eu condimentum mattis. Proin iaculis sem ex, sit amet facilisis tellus
+            scelerisque
+            vel. Nunc eu quam nibh.</p>
+    </div>
+    <div>
+        Cor 1:
+        <input type="button" onclick="m1()" value="Preto" id="botao1">
+
+        Cor 2:
+        <input type="button" onclick="m2()" value="Branco" id="botao2">
+
+        Fundo 1:
+        <input type="button" onclick="m3()" value="Azul" id="botao3">
+
+        Fundo 2:
+        <input type="button" onclick="m4()" value="Branco" id="botao4">
+
+        Maiúsculo:
+        <input type="button" onclick="m5()" value="+" id="maiusculo">
+    </div>
+    <script>
+        function m1() {
+            var body = document.getElementById('corpo');
+            document.getElementById('paragrafo').style.color = "black";
+        } function m2() {
+            var body = document.getElementById('corpo');
+            document.getElementById('paragrafo').style.color = "white";
+        } function m3() {
+            var body = document.getElementById('corpo');
+            document.getElementById('paragrafo').style.background = "blue";
+        } function m4() {
+            var body = document.getElementById('corpo');
+            document.getElementById('paragrafo').style.background = "white";
+        }
+        function m5() {
+            var body = document.getElementById('corpo');
+            alert(document.getElementById('texto').innerText);
+            document.getElementById('texto').innerHTML = document.getElementById('texto').innerHTML.toUpperCase();
+
+        }
+    </script>
+    <script type="text/javascript">
+        var tagAlvo = new Array('p');
+        var tamanhos = new Array('9px', '10px', '11px', '12px', '13px', '14px', '15px');
+        var tamanhoInicial = 2;
+
+        function mudaTamanho(idAlvo, acao) {
+            if (!document.getElementById) return
+            var selecionados = null, tamanho = tamanhoInicial, i, j, tagsAlvo;
+            tamanho += acao;
+            if (tamanho < 0) tamanho = 0;
+            if (tamanho > 6) tamanho = 6;
+            tamanhoInicial = tamanho;
+            if (!(selecionados = document.getElementById(idAlvo))) selecionados = document.getElementsByTagName(idAlvo)[0];
+            selecionados.style.fontSize = tamanhos[tamanho];
+            for (i = 0; i < tagAlvo.length; i++) {
+                tagsAlvo = selecionados.getElementsByTagName(tagAlvo[i]);
+                for (j = 0; j < tagsAlvo.length; j++) tagsAlvo[j].style.fontSize = tamanhos[tamanho];
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+div {
+    width: 100px;
+    height: 50px;
+    text-align: center; 
+}
+#box1 {
+    position: absolute;
+    background: blue;
+    padding-top: 20px;
+    top: 40px;
+    left: 50px;
+}
+#box2 {
+    position: absolute;
+    background: purple;
+    padding-top: 20px;
+    top: 40px;
+    right: 50px;
+}
+#box3 {
+    position: absolute;
+    background: green;
+    padding-top: 20px;
+    bottom: 40px;
+    right: 50px;
+}
+#box4 {
+    position: absolute;
+    background: red;
+    padding-top: 20px;
+    bottom: 40px;
+    left: 50px;
+}

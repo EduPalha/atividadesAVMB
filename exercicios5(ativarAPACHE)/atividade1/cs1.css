@@ -1,0 +1,50 @@
+body { 
+    margin-right: 40px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    margin-left: 40px;
+}
+.espaco1 {
+    color: black;
+    font-size: 20px;
+    font-style: inherit;
+    width:40%;
+    height:40px;
+    background:blue;
+    padding-left: 60px;
+    border-style: outset;
+    border-color:white;
+}
+.espaco2 {
+    color: black;
+    font-size: 20px;
+    font-style: inherit;
+    width:40%;
+    height:40px;
+    background:red;
+    padding-left: 60px;
+    border-style: outset;
+    border-color:white;
+}
+.espaco3 {
+    color: black;
+    font-size: 20px;
+    font-style: inherit;
+    width:40%;
+    height:40px;
+    background:green;
+    padding-left: 60px;
+    border-style: outset;
+    border-color:white;
+}
+.espaco4 {
+    color: black;
+    font-size: 20px;
+    font-style: inherit;
+    width:40%;
+    height:40px;
+    background: purple;
+    padding-left: 60px;
+    border-style: outset;
+    border-color:white;
+}

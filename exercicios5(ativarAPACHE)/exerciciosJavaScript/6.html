@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Ex6</title>
+    <meta charset="utf-8">
+</head>
+
+<body id="corpo">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus venenatis a nulla in rhoncus. Mauris imperdiet
+        tortor a arcu varius posuere. Maecenas neque sapien, interdum id purus id, venenatis ultrices sem. Donec ac
+        dictum mauris. Morbi fermentum ac sapien in imperdiet. Integer sit amet sapien ac ex tristique pharetra. Nullam
+        fermentum fringilla venenatis. Aenean sed neque euismod sapien consectetur convallis sed nec mi. Etiam nisi
+        arcu, consequat interdum tempor in, gravida sit amet ipsum. Maecenas pellentesque placerat elit id venenatis.
+    </p>
+    <p id="paragrafo">
+        Nam viverra in nisl nec gravida. Donec eu leo hendrerit, rhoncus neque eu, fringilla mi. Fusce ut tellus
+        venenatis, fringilla metus eu, varius turpis. Integer fringilla risus dolor, nec porta turpis vestibulum
+        aliquet. Aliquam ut molestie felis. Maecenas et nunc odio. Nulla facilisi. In pharetra fringilla ligula, sit
+        amet sodales dui lacinia vitae. Proin vel enim id sem dapibus sollicitudin. Proin mollis justo tellus, vitae
+        venenatis leo condimentum ac. Pellentesque congue felis a velit volutpat ultricies. Etiam sodales eget enim vel
+        facilisis. Mauris rutrum mi eu condimentum mattis. Proin iaculis sem ex, sit amet facilisis tellus scelerisque
+        vel. Nunc eu quam nibh.
+    </p>
+    <div>
+        Cor texto 1:
+        <input type="button" onclick="m1()" value="Preto" id="botao1">
+
+        Cor texto 2:
+        <input type="button" onclick="m2()" value="Branco" id="botao2">
+
+        Fundo 1:
+        <input type="button" onclick="m3()" value="Azul" id="botao3">
+
+        Fundo 2:
+        <input type="button" onclick="m4()" value="Branco" id="botao4">
+    </div>
+
+
+    <script>
+        function m1() {
+            var body = document.getElementById('corpo');
+            //body.style.color = "black";
+            document.getElementById('paragrafo').style.color = "black";
+        } function m2() {
+            var body = document.getElementById('corpo');
+            //body.style.color = "white";
+            document.getElementById('paragrafo').style.color = "white";
+        } function m3() {
+            var body = document.getElementById('corpo');
+            //body.style.background = "blue";
+            document.getElementById('paragrafo').style.background = "blue";
+        } function m4() {
+            var body = document.getElementById('corpo');
+            //body.style.background = "white";
+            document.getElementById('paragrafo').style.background = "white";
+        }
+    </script>
+</body>
+
+</html>

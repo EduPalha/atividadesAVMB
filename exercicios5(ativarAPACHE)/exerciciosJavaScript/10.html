@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Cadastro</title>
+    <meta charset="utf-8" />
+</head>
+
+<body>
+    <form id="formcliente">
+
+        <h1>Cadastro:</h1>
+
+        <p class="nome">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nomeid" required="required" name="nome" />
+        </p>
+        <p class="pessoa">
+            <label for="nome">Tipo:</label>
+            <select id="pessoaselect" onchange="mudar()">
+                <option value="zero">-</option>
+                <option value="fisica">P. Fisica</option>
+                <option value="juridica">P. Jurídica</option>
+            </select>
+        </p>
+        <p class="pessoa1">
+            CPF:
+            <input type="text" id="pessoa1" required="required" name="pessoafisica" />
+        </p>
+        <p class="pessoa2">
+            CNPJ:
+            <input type="text" id="pessoa2" required="required" name="pessoajuridica" />
+        </p>
+        <p class="end">
+            Endereço:
+            <input type="text" id="end" required="required" name="endereco" />
+        </p>
+        <p class="telefone">
+            Telefone:
+            <input type="text" id="telefone" required="required" name="telefone" />
+        </p>
+        <p class="email">
+            Email:
+            <input type="text" id="email" required="required" name="email" />
+        </p>
+        <p class="submit">
+            <input type="submit" onclick="Enviar();" value="Enviar" />
+        </p>
+
+    </form>
+    <script>
+        var fisica = document.getElementById('fisica');
+        var juridica = document.getElementById('juridica');
+        function mudar() {
+            if (fisica.value) {
+
+            } else (juridica.value)
+        }
+    </script>
+</body>
+
+</html>

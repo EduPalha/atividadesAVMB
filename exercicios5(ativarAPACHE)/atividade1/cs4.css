@@ -1,0 +1,30 @@
+body { 
+    margin-right: 40px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    margin-left: 40px;
+}
+ul {
+    border-width: 3px;
+    width:40%;
+    border-style: solid;
+    border-color: green;
+    list-style-type: none;
+    padding: 3px;
+    
+}
+li {
+    list-style-type: none;
+    color: yellow;
+    background: grey;
+    padding: 20px;
+    margin: 4px;
+}
+li:hover {
+    letter-spacing: 14px;
+    color: yellow;
+    font-weight: italic;
+    background-color: grey;
+    padding: 50px;
+    cursor: pointer;
+}

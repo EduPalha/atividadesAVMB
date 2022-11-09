@@ -1,0 +1,132 @@
+.bodyy { 
+    margin: 40px 30px 20px 30px;
+    font-family: arial;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-position:center;
+    background-image:url("bgdindex.jpg");
+    font-size: 18px;
+}
+#name{
+    margin: 160px 0px 0px 70px;
+    padding: 5px 0px 10px 10px;
+    color: white;
+    float: left;
+    width: 200px;
+    height: 100px;
+    border: 1px solid orange;
+    border-radius: 10%;
+    border-width: 2px;
+    border-style: outset;
+    border-color:white;
+    background: orange;
+    text-align: left;
+    font-size: 12px;
+    font-family: arial;
+}
+#saiba{
+    color:white;
+    font-family: arial;
+    font-size:22px;
+    margin: 600px 10px 10px 350px;
+    float:left;
+    position: absolute;
+
+}
+.logo {
+    position: absolute;
+    left: 100px;
+    top: 10px;
+    width: 200px;
+}
+.barrasup{
+    margin: 50px 10px 10px 350px;
+    padding: 20px 10px 1px 10px;
+    font-size: 22px;
+    letter-spacing: 5px;
+    word-spacing: 50px;
+    text-align:center;
+    background: orange;
+    border-radius: 50%;
+    border-style: outset;
+    border-color:white;
+    width: 810px;
+    height: 60px;
+}
+.navegacao {
+    margin: 200px 10px 10px 70px;
+    padding: 10px 10px 10px 10px;
+    list-style-type: none;
+    text-align:right;
+    line-height:50px;
+    font-size: 22px;
+    background: orange;
+    border-radius: 10%;
+    border-style: outset;
+    border-color:white;
+    width: 180px;
+    height: 400px;
+    float:left;
+    position: absolute;
+}
+.titulohome{
+    margin: 30px 10px 0px 580px;
+    font-style: bold;
+    font-size:25px;
+    text-align:center;
+    color: white;
+    width: 400px;
+    height: 60px;
+    float:center;
+}
+.texto1home{
+    margin: 10px 10px 10px 350px;
+    font-size: 15px;
+    text-align:justify;
+    width: 400px;
+    height: 600px;
+    position:absolute;
+    color: white;
+    float: center;
+}
+.texto2home{
+    margin: 10px 10px 10px 770px;
+    font-size: 15px;
+    text-align:justify;
+    width: 400px;
+    height: 600px;
+    position:absolute;
+    color: white;
+    float: right;
+}
+a:hover {
+    background-color: black;
+}
+a:link {
+    color:white;
+}
+a:visited {
+    color: white;
+}
+a:active {
+    color: yellow;
+}
+.foot {
+    bottom: 40px;
+    margin: 850px 40px 40px 70px;
+    padding: 20px 10px 1px 10px;
+    font-size: 18px;
+    text-align:center;
+    background: orange;
+    border-style: outset;
+    border-color:white;
+    border-radius: 50%;
+    color:white;
+    width: 1110px;
+    height: 80px;
+    float: bottom;
+    
+}
+
+   
+

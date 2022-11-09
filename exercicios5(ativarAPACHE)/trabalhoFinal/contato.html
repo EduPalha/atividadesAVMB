@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="stylehome.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script>
+        function enviar() {
+            alert("Mensagem enviada com sucesso!");
+        }
+
+    </script>
+
+    <title>Contato | Bebidas e Cia</title>
+    <style>
+        .titulocontato {
+            margin: 40px 10px 0px 420px;
+            font-style: bold;
+            font-size: 40px;
+            text-align: center;
+            color: white;
+            width: 400px;
+            height: 60px;
+            float: center;
+        }
+
+        #formcliente {
+            color: white;
+            float: center;
+            position: absolute;
+            margin: 40px 10px 0px 420px;
+            text-align: center;
+
+        }
+
+        .campotexto {
+            color:white;
+            float: center;
+            position: absolute;
+            margin: 460px 10px 0px 260px;
+            text-align:center;
+        }
+    </style>
+
+    <header>
+        <a href="index.html">
+            <img src="logopng.png" class="logo" alt="" href="index.html"> </img>
+        </a>
+    </header>
+</head>
+
+<body class="bodyy">
+    <nav>
+        <ul class="barrasup">
+            <a href="empresa.html" class="horiz">Empresa</a>
+            <a href="local.html" class="horiz">Localização</a>
+        </ul>
+    </nav>
+    <div>
+        <section class="titulocontato">
+            Mande-nos um email:
+        </section>
+        <form id="formcliente">
+            <h4>Digite seus dados para entrarmos em contato!</h4>
+
+            <p class="nome">
+                <label for="nome">Nome:</label>
+                <br>
+                <input type="text" id="nomeid" size="50" required="required" name="nome" />
+            </p>
+            <p class="pessoa12">
+                CPF\CNPJ:
+                <br>
+                <input type="text" id="pessoa12" size="50" required="required" name="pessoa12" />
+            </p>
+            <p class="end">
+                Endereço:
+                <br>
+                <input type="text" id="end" size="50" required="required" name="endereco" />
+            </p>
+            <p class="telefone">
+                Telefone:
+                <br>
+                <input type="text" id="telefone" size="50" required="required" name="telefone" />
+            </p>
+            <p class="email">
+                Email:
+                <br>
+                <input type="text" id="email" size="50" required="required" name="email" />
+            </p>
+            <p class="submit">
+                <input type="submit" onclick="Enviar();" value="Enviar" />
+            </p>
+        </form>
+        <p class="campotexto">
+            Campo para escrever:
+            <br>
+            <input type="text" id="campotexto" size="100" style="line-height: 8em;" required="required"
+                name="campotexto" value="Opcional!" />
+        </p>
+
+
+</body>
+<footer class="foot">
+    <div>
+        <p>© 2019 Cia das Bebidas. Todos os direitos reservados</p>
+    </div>
+    <nav>
+        <a href="index.html">Home</a>
+    </nav>
+    </div>
+</footer>
+
+</html>

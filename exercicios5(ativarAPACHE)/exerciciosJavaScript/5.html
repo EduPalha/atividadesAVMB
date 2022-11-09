@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Ex5</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <form name="form1">
+        <input type="checkbox" name="grupo" id="c1" onClick="HabiDsabi()">Casa
+        <input type="checkbox" name="grupo" id="c2" onClick="HabiDsabi()">Carro
+        <input type="checkbox" name="grupo" id="c3" onClick="HabiDsabi()">Moto
+        <input type="checkbox" name="grupo" id="c4" onClick="HabiDsabi()">Computador
+        <div></div>
+        <input type="button" name="envia" id="envia" value="Enviar" disabled>
+    </form>
+    <script>	
+            function HabiDsabi(){  
+
+                var contador = 0;
+                var checks = document.getElementsByName("grupo");
+                for(var i = 0; i<checks.length; i++)
+                {
+                    if(checks[i].checked == true)
+                    {
+                        contador++;
+                    }
+                }
+                if(contador >= 2){ 	 
+                    document.getElementById('envia').disabled = "";
+                }  
+                else{ 	 
+                    document.getElementById('envia').disabled = "disabled"; 
+                }	
+            }
+    </script>
+    </body>
+</html>
