@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Teste em Javascript 2</h2>
+
+Nome: <input type="text" id="nome">
+Idade: <input type="text" id="idade" onchange="js2()">
+
+<script>
+function js2() {
+  let nome = document.getElementById("nome").value;
+  let idade = document.getElementById("idade").value;
+  alert(nome.toUpperCase() + " tem " + idade + " anos!");
+}
+</script>
+
+</body>
+</html>

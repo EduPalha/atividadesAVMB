@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body id="fundo">
+
+<h2>Teste em Javascript 2</h2>
+
+Valor1: <input type="text" id="valor1">
+Valor2: <input type="text" id="valor2" onchange="js2()">
+
+<script>
+function js2() {
+  let valor1 = document.getElementById("valor1").value;
+  let valor2 = document.getElementById("valor2").value;
+  valor1 = parseInt(valor1) + parseInt(valor2);
+  alert("Soma: " + valor1);
+  if(valor1%2==0){
+    document.getElementById("fundo").style.backgroundColor = 'blue';
+    const paragrafo = document.createElement("p");
+    paragrafo.innerText = "VALOR PAR!";
+    document.body.appendChild(paragrafo);
+  }
+  else{
+    document.getElementById("fundo").style.backgroundColor = 'red'; 
+    const paragrafo = document.createElement("p");
+    paragrafo.innerText = "VALOR IMPAR!";
+    document.body.appendChild(paragrafo);
+  }
+}
+</script>
+
+</body>
+</html>
