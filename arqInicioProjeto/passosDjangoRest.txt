@@ -1,0 +1,61 @@
+Passos Django-Rest
+
+mkdir testeApi
+cd testeApi
+
+###Python > 3.0: 
+python 3-m venv env (criar venv)
+. env/bin/Activate (ativar venv)
+
+
+###Python > 2.0 e < 3.0:
+virtualenv -p /usr/local/bin/pythonw env (criar venv - MAC)
+virtualenv -p c:\Python27\pythonw env (criar venv - Windows)
+source env/bin/activate (ativar venv - MAC)
+env\Scripts\Activate.ps1 (ativar venv - Windows)
+python -V (verificar versão python)
+python -m django —version(verificar versão django)
+
+
+###Bibliotecas necessárias:
+pip install django
+pip install djangorestframework
+pip install markdown
+pip install djangofilter
+
+
+###Comandos iniciais:
+
+django-admin startproject apiRest (iniciando o projeto)
+
+cd apiRest
+
+python manage.py startapp core (criando app núcleo do projeto)
+
+colocar o ‘core’ no installed_apps do settings.py 
+
+python manage.py migrate (criando banco de dados)
+
+python manage.py createsuperuser (criando usuário principal - avmb(admin), avmb2022(Sucesso22), eduardo.palharini@avmb.com.br (palharini.edu@gmail.com))
+
+python manage.py changepassword admin (para mudar senha de algum usuario)
+
+python manage.py runserver (localhost:8000)
+
+para acessar configurações (localhost:8000/admin)
+
+colocar o ‘rest_framework’ no installed_apps do settings.py 
+
+colocar o url(r'^api-auth/', include('rest_framework.urls')) no installed_apps do urls.py e from django.conf.urls import include
+a partir do Django 2, fica assim path('api-auth/', include('rest_framework.urls')) no installed_apps do urls.py
+
+Django funciona na seguinte ordem: rota > view > model > serializar (ao inves de um template html, envia para o usuario uma resposta em Json)
+ 
+
+
+
+
+
+
+criando os requerimentos do sistema para dar push no git:
+pip freeze > requirements.txt.

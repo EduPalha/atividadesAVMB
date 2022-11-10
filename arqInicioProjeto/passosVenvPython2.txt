@@ -1,0 +1,10 @@
+pip2 install virtualenv (instalando venv do python 2 no windows)
+python -V (versâo atual python)
+virtualenv -p c:\Python27\python.exe env
+env/Scripts/activate.ps1 (ativar)
+deactivate (desativar)
+
+
+senha Postgre:
+avmb2022
+porta 5432
