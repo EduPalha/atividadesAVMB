@@ -1,149 +1,54 @@
 ﻿/*
-8) Ler uma matriz com 4x4 de inteiros e mostrar os números na 
-ordem direta e inversa a que foram lidos.
+14) Escreva um programa que leia uma matriz de ordem 5 
+e verifique se os elementos da diagonal principal (da 
+esquerda para a direita) são os mesmos da diagonal 
+secundária (direita pra esquerda).
 */
 
 namespace ImersaoAVMB
 {
     class Program
     {
-        public static double determinant(double[,] a, float k)
-        {
-            double[,] b = new double[4, 4];
-            double det = 0, s = 1;
-            int i, j, m, n, c;
-            if (k == 1)
-            {
-                return (a[0, 0]);
-            }
-            else
-            {
-                det = 0;
-                for (c = 0; c < k; c++)
-                {
-                    m = 0;
-                    n = 0;
-                    for (i = 0; i < k; i++)
-                    {
-                        for (j = 0; j < k; j++)
-                        {
-                            b[i, j] = 0;
-                            if (i != 0 && j != c)
-                            {
-                                b[m, n] = a[i, j];
-                                if (n < (k - 2))
-                                    n++;
-                                else
-                                {
-                                    n = 0;
-                                    m++;
-                                }
-                            }
-                        }
-                    }
-                    det = det + s * (a[0, c] * determinant(b, k - 1));
-                    s = -1 * s;
-                }
-            }
-
-            return (det);
-        }
-
-        public static void cofactor(double[,] num, float f)
-        {
-            double[,] b = new double[4, 4];
-            double[,] fac = new double[4, 4];
-            int p, q, m, n, i, j;
-            for (q = 0; q < f; q++)
-            {
-                for (p = 0; p < f; p++)
-                {
-                    m = 0;
-                    n = 0;
-                    for (i = 0; i < f; i++)
-                    {
-                        for (j = 0; j < f; j++)
-                        {
-                            if (i != q && j != p)
-                            {
-                                b[m, n] = num[i, j];
-                                if (n < (f - 2))
-                                    n++;
-                                else
-                                {
-                                    n = 0;
-                                    m++;
-                                }
-                            }
-                        }
-                    }
-                    fac[q, p] = pow(-1, q + p) * determinant(b, f - 1);
-                }
-            }
-            transpose(num, fac, f);
-        }
-
-        public static void transpose(float[,] num, double[,] fac, float r)
-        {
-            int i, j;
-            double[,] b = new double[4, 4];
-            double[,] inverse = new double[4, 4];
-            double d;
-
-            for (i = 0; i < r; i++)
-            {
-                for (j = 0; j < r; j++)
-                {
-                    b[i, j] = fac[j, i];
-                }
-            }
-            d = determinant(num, r);
-            for (i = 0; i < r; i++)
-            {
-                for (j = 0; j < r; j++)
-                {
-                    inverse[i, j] = b[i, j] / d;
-                }
-            }
-            Console.WriteLine("\n\nThe inverse of matrix is :");
-
-            for (i = 0; i < r; i++)
-            {
-                for (j = 0; j < r; j++)
-                {
-                    Console.WriteLine("\t" + inverse[i, j]);
-                }
-                Console.WriteLine("");
-            }
-        }
-
-
         static void Main(string[] args)
         {
             Random random = new Random();
-            double[,] m = new double[4, 4];
-            double d, k;
-            //popular matriz m
-            for (int i = 0; i < 4; i++)
+            int ordem = 5;
+            double[,] mA = new double[ordem, ordem];
+
+            // populando matriz 
+            Console.WriteLine("\nMatriz:");
+            for (int i = 0; i < ordem; i++)
             {
-                for (int j = 0; j < 4; j++)
+                for (int j = 0; j < ordem; j++)
                 {
-                    m[i, j] = random.Next(0, 10);
-                    //Console.WriteLine(m[i,j]);
+                    mA[i, j] = random.Next(0, 10);
+                    Console.Write(mA[i,j] + "         ");
                 }
+                Console.WriteLine("\t");
             }
-            
-            d = determinant(a, k);
-            if (d == 0)
+
+            // comparando diagonal principal e secundaria
+            if(mA[0,0] == mA[0,4])
             {
-                Console.WriteLine("\nInverse of Entered Matrix is not possible\n");
+                Console.WriteLine("A posição m00 e m04 tem o mesmo valor " + mA[0,0]);
+            }
+            else if(mA[1,1] == mA[1,3])
+            {
+                Console.WriteLine("A posição m11 e m13 tem o mesmo valor " + mA[0,0]);
+            }
+            else if(mA[3,3] == mA[3,1])
+            {
+                Console.WriteLine("A posição m33 e m31 tem o mesmo valor " + mA[0,0]);
+            }
+            else if(mA[4,0] == mA[4,4])
+            {
+                Console.WriteLine("A posição m40 e m44 tem o mesmo valor " + mA[0,0]);
             }
             else
             {
-                cofactor(a, k);
+                Console.WriteLine("Não existem valores da matriz principal = a matriz secundária na mesma posição da diagonal!");
             }
-
-
+            
         }
     }
 }
