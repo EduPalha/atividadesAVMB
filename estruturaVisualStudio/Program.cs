@@ -1,8 +1,7 @@
 ﻿/*
-14) Escreva um programa que leia uma matriz de ordem 5 
-e verifique se os elementos da diagonal principal (da 
-esquerda para a direita) são os mesmos da diagonal 
-secundária (direita pra esquerda).
+16) Escreva um algoritmo para transpor uma matriz 
+3x4 para outra 4x3. Transpor uma matriz significa 
+transformar suas linhas em colunas e vice-versa.
 */
 
 namespace ImersaoAVMB
@@ -12,43 +11,40 @@ namespace ImersaoAVMB
         static void Main(string[] args)
         {
             Random random = new Random();
-            int ordem = 5;
-            double[,] mA = new double[ordem, ordem];
+            double[,] mA = new double[4, 3];
+            double[,] mB = new double[3, 4];
 
             // populando matriz 
             Console.WriteLine("\nMatriz:");
-            for (int i = 0; i < ordem; i++)
+            for (int i = 0; i < 4; i++)
             {
-                for (int j = 0; j < ordem; j++)
+                for (int j = 0; j < 3; j++)
                 {
                     mA[i, j] = random.Next(0, 10);
-                    Console.Write(mA[i,j] + "         ");
+                    Console.Write(mA[i,j] + "        ");
                 }
                 Console.WriteLine("\t");
             }
+            // transpondo matriz
+            for (int i = 0; i < 4; i++)
+            {
+                for (int j = 0; j < 3; j++)
+                {
+                    if(i)
+                   
+                }
+            }
 
-            // comparando diagonal principal e secundaria
-            if(mA[0,0] == mA[0,4])
+            // visualização da matriz transposta
+            Console.WriteLine("\nMatrizes TRANSPOSTA:");
+            for (int i = 0; i < 3; i++)
             {
-                Console.WriteLine("A posição m00 e m04 tem o mesmo valor " + mA[0,0]);
+                for (int j = 0; j < 4; j++)
+                {
+                    Console.Write(mA[i,j] + "        ");
+                }
+                Console.WriteLine("\t");
             }
-            else if(mA[1,1] == mA[1,3])
-            {
-                Console.WriteLine("A posição m11 e m13 tem o mesmo valor " + mA[0,0]);
-            }
-            else if(mA[3,3] == mA[3,1])
-            {
-                Console.WriteLine("A posição m33 e m31 tem o mesmo valor " + mA[0,0]);
-            }
-            else if(mA[4,0] == mA[4,4])
-            {
-                Console.WriteLine("A posição m40 e m44 tem o mesmo valor " + mA[0,0]);
-            }
-            else
-            {
-                Console.WriteLine("Não existem valores da matriz principal = a matriz secundária na mesma posição da diagonal!");
-            }
-            
         }
     }
 }
