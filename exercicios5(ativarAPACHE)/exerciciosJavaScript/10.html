@@ -16,32 +16,39 @@
             <input type="text" id="nomeid" required="required" name="nome" />
         </p>
         <p class="pessoa">
-            <label for="nome">Tipo:</label>
-            <select id="pessoaselect" onchange="mudar()">
-                <option value="zero">-</option>
-                <option value="fisica">P. Fisica</option>
-                <option value="juridica">P. Jurídica</option>
-            </select>
+            <label for="nome">Tipo:</label><br>
+            <input type="radio" id="fisica" name="pessoa" value="opcao1" onClick="habilitar()">
+            <label for="fisica">FISICA</label><br>
+            <input type="radio" id="juridica" name="pessoa" value="opcao2" onClick="habilitar()">
+            <label for="juridica">JURIFICA</label><br>
         </p>
         <p class="pessoa1">
             CPF:
-            <input type="text" id="pessoa1" required="required" name="pessoafisica" />
+            <input type="number" id="pessoa1" required="required" name="pessoafisica" disabled />
         </p>
         <p class="pessoa2">
             CNPJ:
-            <input type="text" id="pessoa2" required="required" name="pessoajuridica" />
+            <input type="number" id="pessoa2" required="required" name="pessoajuridica" disabled />
+        </p>
+        <p class="dataNascimento">
+            Data de Nascimento:
+            <input type="number" id="dataNascimento" required="required" name="pessoajuridica" disabled />
         </p>
         <p class="end">
             Endereço:
             <input type="text" id="end" required="required" name="endereco" />
         </p>
+        <p class="cep">
+            CEP:
+            <input type="number" id="cep" required="required" name="cepBrasil" />
+        </p>
         <p class="telefone">
             Telefone:
-            <input type="text" id="telefone" required="required" name="telefone" />
+            <input type="number" id="telefone" required="required" name="telefone" />
         </p>
         <p class="email">
             Email:
-            <input type="text" id="email" required="required" name="email" />
+            <input type="email" id="email" required="required" name="email" />
         </p>
         <p class="submit">
             <input type="submit" onclick="Enviar();" value="Enviar" />
@@ -49,12 +56,17 @@
 
     </form>
     <script>
-        var fisica = document.getElementById('fisica');
-        var juridica = document.getElementById('juridica');
-        function mudar() {
-            if (fisica.value) {
-
-            } else (juridica.value)
+        function habilitar() {
+            if (document.getElementById('fisica').checked == true) {
+                document.getElementById('pessoa1').disabled = false;
+                document.getElementById('dataNascimento').disabled = false;
+                document.getElementById('pessoa2').disabled = true;
+            }
+            else if (document.getElementById('juridica').checked == true) {
+                document.getElementById('pessoa1').disabled = true;
+                document.getElementById('dataNascimento').disabled = true;
+                document.getElementById('pessoa2').disabled = false;
+            }
         }
     </script>
 </body>

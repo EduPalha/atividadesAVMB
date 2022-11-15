@@ -10,39 +10,28 @@
     <form id="formcliente">
 
         <h1>Cadastro:</h1>
-
-        <p class="nome">
-            <label for="nome">Nome:</label>
-            <input type="text" id="nomeid" required="required" name="nome" />
-        </p>
-        <p class="senha">
-            <label for="senha1">Senha:</label>
-            <input type="text" id="senha1" onclick="s1()" required="required" name="fone" />
-
-        </p>
-        <p class="confirmasenha">
-            <label for="senha2">Senha:</label>
-            <input type="text" id="senha2" onclick="s2()" required="required" name="fone" />
-        </p>
-
-        <p class="submit">
-            <input type="submit" onclick="Enviar();" value="Enviar" />
-        </p>
-
+        <input type="text" name="login" id="login" placeholder="Seu login" required><br>
+        <input type="text" name="senha" id="senha1" placeholder="Sua senha" required><br>
+        <input type="text" name="senha" id="senha2" placeholder="Redigite sua senha" required><br>
+        <input type="submit" value="Enviar" id="btnEnviar">
     </form>
+
     <script>
-        // <input type="submit" onclientclick="Enviar();" value="Enviar" />      tentei usar em cima.....
-        function Enviar() {
-            var campo1 = document.getElementById('senha1');
-            var campo2 = document.getElementById('senha2');
+        var campo1 = document.getElementById('senha1');
+        var campo2 = document.getElementById('senha2');
+
+        document.getElementById('btnEnviar').addEventListener('click', function () {
+            const qtdCaracteres = document.getElementById('senha1').value;
             if (campo1.value != campo2.value) {
                 alert("Senhas não conferem!");
-                if (Number(campo1.value) <= 6 && Number(campo1.value) >= 10) {
-                    alert("Insira um senha entre 6 e 10 elementos!");
-                }
-
             }
-        }
+            if (qtdCaracteres.length < 6) {
+                alert("Quantidade de caracteres na senha é insuficiente!");
+            }
+            if (qtdCaracteres.length > 10) {
+                alert("Quantidade de caracteres na senha extrapola o máximo!");
+            }
+        });
     </script>
 </body>
 

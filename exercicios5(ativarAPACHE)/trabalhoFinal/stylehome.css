@@ -2,9 +2,10 @@
     margin: 40px 30px 20px 30px;
     font-family: arial;
     background-repeat:no-repeat;
-    background-attachment:fixed;
-    background-position:center;
+    /*background-attachment:fixed;
+    background-position:center;*/
     background-image:url("bgdindex.jpg");
+    background-color: black;
     font-size: 18px;
 }
 #name{

@@ -55,6 +55,9 @@
 
         Maiúsculo:
         <input type="button" onclick="m5()" value="+" id="maiusculo">
+
+        Minúsculo:
+        <input type="button" onclick="m6()" value="-" id="minusculo">
     </div>
     <script>
         function m1() {
@@ -74,7 +77,11 @@
             var body = document.getElementById('corpo');
             alert(document.getElementById('texto').innerText);
             document.getElementById('texto').innerHTML = document.getElementById('texto').innerHTML.toUpperCase();
-
+        }
+        function m6() {
+            var body = document.getElementById('corpo');
+            alert(document.getElementById('texto').innerText);
+            document.getElementById('texto').innerHTML = document.getElementById('texto').innerHTML.toLowerCase();
         }
     </script>
     <script type="text/javascript">
