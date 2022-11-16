@@ -7,8 +7,19 @@
   "targets": {
     ".NETCoreApp,Version=v7.0": {
       "estruturaVisualStudio/1.0.0": {
+        "dependencies": {
+          "CSVLibraryAK": "1.1.4"
+        },
         "runtime": {
           "estruturaVisualStudio.dll": {}
+        }
+      },
+      "CSVLibraryAK/1.1.4": {
+        "runtime": {
+          "lib/net48/CSVLibraryAK.dll": {
+            "assemblyVersion": "1.1.4.0",
+            "fileVersion": "1.1.4.0"
+          }
         }
       }
     }
@@ -18,6 +29,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "CSVLibraryAK/1.1.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-JL9fOfbbwXGGnm22q81bDTkc+XTS3wI65RoxZjngq4WKSfz81ZAniUhobVEoxezrlEcPRdYG/HEz2x2ntUdBcw==",
+      "path": "csvlibraryak/1.1.4",
+      "hashPath": "csvlibraryak.1.1.4.nupkg.sha512"
     }
   }
 }

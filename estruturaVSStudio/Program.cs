@@ -1,65 +1,49 @@
-﻿/* Criando, consultando, editando arquivos */
+﻿/* Criando, consultando, editando arquivos 
+
+    3. nos arquivos .csv. por exemplo, arquivo de figurinhas repetidas, faltantes.csv
+        codigo figurinha;seleçao;nome do jogador 
+*/
 
 using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.IO;
 
 namespace ImersaoAVMB
 {
+    public class Person
+    {
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public int? Age { get; set; }
+        public string IsActive { get; set; }
+    }
     class Program
     {
 
         static void Main(string[] args)
         {
-            int opcao = 0;
-            string arquivo = "C:\\Users\\eduardo.palharini\\Desktop\\atividadesAVMB\\estruturaVisualStudio\\emails.txt";
-            StreamWriter sw = new StreamWriter(arquivo, true);
-         
-            StreamReader sr;
-            try
+            var fileName = @"C:\\Users\\eduardo.palharini\\Desktop\\atividadesAVMB\\estruturaVSStudio\\arquivo.csv";
+            var configuration = new CsvConfiguration(CultureInfo.InvariantCulture)
             {
-                while (true)
+                Encoding = Encoding.UTF8, // Our file uses UTF-8 encoding.
+                Delimiter = "," // The delimiter is a comma.
+            };
+
+            using (var fs = File.Open(fileName, FileMode.Open, FileAccess.Read, FileShare.Read))
+            {
+                using (var textReader = new StreamReader(fs, Encoding.UTF8))
+                using (var csv = new CsvReader(textReader, configuration))
                 {
-                    if (opcao == 3){
-                        break;
-                    }
-                    Console.WriteLine("--------Menu--------");
-                    Console.WriteLine("1 - Cadastrar email");
-                    Console.WriteLine("2 - Listar emails");
-                    Console.WriteLine("3 - Sair");
-                    Console.Write("Digite sua opcao: ");
-                    opcao = int.Parse(Console.ReadLine() + "");
+                    var data = csv.GetRecords<Person>();
 
-                    switch (opcao)
+                    foreach (var person in data)
                     {
-                        case 1:
-                            Console.Write("Email: ");
-                            sw.WriteLine(Console.ReadLine() + "");
-                            break;
-
-                        case 2:
-                            Console.WriteLine("\nEmails armazenados: ");
-                            sr = new StreamReader(arquivo);
-                            string linha = sr.ReadLine();
-                            while(linha != null){
-                                Console.WriteLine(linha);
-                                sr.Close();
-                            }
-                            Console.WriteLine("\n____________________");
-                            break;
-
-                        case 3:
-                            break;
+                        Console.WriteLine(person);
                     }
                 }
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine("Exceção: " + e);
-            }
-            finally
-            {
-                Console.WriteLine("Saindo do sistema...");
-                sw.Close();
             }
 
         }
