@@ -1,9 +1,0 @@
-Jogo da velha
--Jogador x Jogador
--Controlar a vez, primeiro joga o primeiro e depois o segundo
--Controlar empate
--Uma matriz representa o tabuleiro
--Jogador seleciona a posição (deve verificar se já não foi jogado nesta posição)
--Quando tiver um ganhador, informar quem foi o ganhador
--No final, se não houve ganhador, deve informar o empate
--Após cada jogada, deve ser apresentada a matriz com o jogo corrente (X ou O nas jogadas)
