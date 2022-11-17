@@ -3,9 +3,10 @@
     3. nos arquivos .csv. por exemplo, arquivo de figurinhas repetidas, faltantes.csv
         codigo figurinha;seleçao;nome do jogador 
 */
-
+using CsvHelper.configuration;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -25,17 +26,17 @@ namespace ImersaoAVMB
 
         static void Main(string[] args)
         {
-            var fileName = @"C:\\Users\\eduardo.palharini\\Desktop\\atividadesAVMB\\estruturaVSStudio\\arquivo.csv";
-            var configuration = new CsvConfiguration(CultureInfo.InvariantCulture)
+            var arquivo = @"C:\\Users\\eduardo.palharini\\Desktop\\atividadesAVMB\\estruturaVSStudio\\arquivo.csv";
+            var configuracao = new CsvReader(CultureInfo.InvariantCulture)
             {
                 Encoding = Encoding.UTF8, // Our file uses UTF-8 encoding.
                 Delimiter = "," // The delimiter is a comma.
             };
 
-            using (var fs = File.Open(fileName, FileMode.Open, FileAccess.Read, FileShare.Read))
+            using (var fs = File.Open(arquivo, FileMode.Open, FileAccess.Read, FileShare.Read))
             {
                 using (var textReader = new StreamReader(fs, Encoding.UTF8))
-                using (var csv = new CsvReader(textReader, configuration))
+                using (var csv = new CsvReader(textReader, configuracao))
                 {
                     var data = csv.GetRecords<Person>();
 
