@@ -8,17 +8,17 @@
     ".NETCoreApp,Version=v7.0": {
       "estruturaVisualStudio/1.0.0": {
         "dependencies": {
-          "CSVLibraryAK": "1.1.4"
+          "CsvHelper": "30.0.1"
         },
         "runtime": {
           "estruturaVisualStudio.dll": {}
         }
       },
-      "CSVLibraryAK/1.1.4": {
+      "CsvHelper/30.0.1": {
         "runtime": {
-          "lib/net48/CSVLibraryAK.dll": {
-            "assemblyVersion": "1.1.4.0",
-            "fileVersion": "1.1.4.0"
+          "lib/net6.0/CsvHelper.dll": {
+            "assemblyVersion": "30.0.0.0",
+            "fileVersion": "30.0.1.0"
           }
         }
       }
@@ -30,12 +30,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "CSVLibraryAK/1.1.4": {
+    "CsvHelper/30.0.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-JL9fOfbbwXGGnm22q81bDTkc+XTS3wI65RoxZjngq4WKSfz81ZAniUhobVEoxezrlEcPRdYG/HEz2x2ntUdBcw==",
-      "path": "csvlibraryak/1.1.4",
-      "hashPath": "csvlibraryak.1.1.4.nupkg.sha512"
+      "sha512": "sha512-rcZtgbWR+As4G3Vpgx0AMNmShGuQLFjkHAPIIflzrfkJCx8/AOd4m96ZRmiU1Wi39qS5UVjV0P8qdgqOo5Cwyg==",
+      "path": "csvhelper/30.0.1",
+      "hashPath": "csvhelper.30.0.1.nupkg.sha512"
     }
   }
 }

@@ -20,8 +20,10 @@ namespace ImersaoAVMB
             int opcao = 0;
             int numero;
             string linha;
-            string arquivoRepetidas = "C:\\Users\\eduardo.palharini\\Desktop\\atividadesAVMB\\estruturaVSStudio\\figurinhasRepetidas.txt";
-            string arquivoFaltantes = "C:\\Users\\eduardo.palharini\\Desktop\\atividadesAVMB\\estruturaVSStudio\\figurinhasFaltantes.txt";
+            string arquivoRepetidas = "C:\\Users\\xicuexuxi\\Desktop\\repositorios\\atividadesAVMB\\estruturaVSStudio\\figurinhasRepetidas.txt";
+            string arquivoFaltantes = "C:\\Users\\xicuexuxi\\Desktop\\repositorios\\atividadesAVMB\\estruturaVSStudio\\figurinhasFaltantes.txt";
+            // string arquivoRepetidas = "C:\\Users\\eduardo.palharini\\Desktop\\atividadesAVMB\\estruturaVSStudio\\figurinhasRepetidas.txt";
+            // string arquivoFaltantes = "C:\\Users\\eduardo.palharini\\Desktop\\atividadesAVMB\\estruturaVSStudio\\figurinhasFaltantes.txt";
             StreamWriter sw;
             StreamReader sr;
 
@@ -57,7 +59,7 @@ namespace ImersaoAVMB
                                 else
                                 {
                                     sw = new StreamWriter(arquivoRepetidas, true, Encoding.UTF8);
-                                    sw.WriteLine(Console.ReadLine() + "");
+                                    sw.WriteLine(numero);
                                     sw.Close();
                                 }
                             }
@@ -85,11 +87,11 @@ namespace ImersaoAVMB
                         case 3:
                             sr = new StreamReader(arquivoRepetidas);
                             Console.WriteLine("\n--Figurinhas Repetidas Armazenadas no Arquivo:--\n");
-                            linha = sr.ReadLine();
+                            linha = sr.ReadLine() +"";
                             while (linha != null)
                             {
                                 Console.WriteLine(linha);
-                                linha = sr.ReadLine();
+                                linha = sr.ReadLine() + "";
                             }
                             sr.Close();
                             Console.WriteLine("________________________________________________\n");
@@ -98,11 +100,11 @@ namespace ImersaoAVMB
                         case 4:
                             sr = new StreamReader(arquivoFaltantes);
                             Console.WriteLine("\n--Figurinhas Faltantes Armazenadas no Arquivo:--\n");
-                            linha = sr.ReadLine();
+                            linha = sr.ReadLine() + "";
                             while (linha != null)
                             {
                                 Console.WriteLine(linha);
-                                linha = sr.ReadLine();
+                                linha = sr.ReadLine() + "";
                             }
                             sr.Close();
                             Console.WriteLine("_______________________________________________\n");

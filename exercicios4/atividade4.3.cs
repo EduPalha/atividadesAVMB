@@ -1,4 +1,4 @@
-﻿/* Criando, consultando, editando arquivos 
+/* Criando, consultando, editando arquivos 
 
     3. nos arquivos .csv. por exemplo, arquivo de figurinhas repetidas, faltantes.csv
         codigo figurinha;seleçao;nome do jogador 
