@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "YR9U33GhAiyh+O3u3av9G5ett63UIG5TbpZ5J5Fczm/57onhTasG/m3lSawB+t1i72XA8curqLqyVllBjeEY6w==",
+  "dgSpecHash": "b918WiR/Av+HgIOAWnPRb/KpGRA0PlF1sOUtfAGtoEQzRKmWLO2RwRxTfpEQyIJa4Dkf500LsMHLVOjjLvN5Tw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\XicueXuxi\\Desktop\\Repositorios\\AtividadesAVMB\\estruturaVSStudio\\estruturaVisualStudio.csproj",
+  "projectFilePath": "C:\\Users\\eduardo.palharini\\Desktop\\AtividadesAVMB\\estruturaVSStudio\\estruturaVisualStudio.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\XicueXuxi\\.nuget\\packages\\csvhelper\\30.0.1\\csvhelper.30.0.1.nupkg.sha512"
+    "C:\\Users\\eduardo.palharini\\.nuget\\packages\\csvhelper\\30.0.1\\csvhelper.30.0.1.nupkg.sha512"
   ],
   "logs": []
 }

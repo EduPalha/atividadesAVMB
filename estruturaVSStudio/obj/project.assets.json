@@ -49,31 +49,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\XicueXuxi\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\eduardo.palharini\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\XicueXuxi\\Desktop\\Repositorios\\AtividadesAVMB\\estruturaVSStudio\\estruturaVisualStudio.csproj",
+      "projectUniqueName": "C:\\Users\\eduardo.palharini\\Desktop\\AtividadesAVMB\\estruturaVSStudio\\estruturaVisualStudio.csproj",
       "projectName": "estruturaVisualStudio",
-      "projectPath": "C:\\Users\\XicueXuxi\\Desktop\\Repositorios\\AtividadesAVMB\\estruturaVSStudio\\estruturaVisualStudio.csproj",
-      "packagesPath": "C:\\Users\\XicueXuxi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\XicueXuxi\\Desktop\\Repositorios\\AtividadesAVMB\\estruturaVSStudio\\obj\\",
+      "projectPath": "C:\\Users\\eduardo.palharini\\Desktop\\AtividadesAVMB\\estruturaVSStudio\\estruturaVisualStudio.csproj",
+      "packagesPath": "C:\\Users\\eduardo.palharini\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\eduardo.palharini\\Desktop\\AtividadesAVMB\\estruturaVSStudio\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\XicueXuxi\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\eduardo.palharini\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

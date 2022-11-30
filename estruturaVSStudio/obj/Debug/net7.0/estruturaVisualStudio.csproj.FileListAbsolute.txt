@@ -36,7 +36,6 @@ C:\Users\eduardo.palharini\Desktop\atividadesAVMB\estruturaVSStudio\obj\Debug\ne
 C:\Users\eduardo.palharini\Desktop\atividadesAVMB\estruturaVSStudio\obj\Debug\net7.0\estruturaVisualStudio.pdb
 C:\Users\eduardo.palharini\Desktop\atividadesAVMB\estruturaVSStudio\obj\Debug\net7.0\estruturaVisualStudio.genruntimeconfig.cache
 C:\Users\eduardo.palharini\Desktop\atividadesAVMB\estruturaVSStudio\obj\Debug\net7.0\ref\estruturaVisualStudio.dll
-C:\Users\eduardo.palharini\Desktop\atividadesAVMB\estruturaVSStudio\bin\Debug\net7.0\CSVLibraryAK.dll
 C:\Users\eduardo.palharini\Desktop\atividadesAVMB\estruturaVSStudio\obj\Debug\net7.0\estruturaVisualStudio.csproj.CopyComplete
 C:\Users\XicueXuxi\Desktop\Repositorios\AtividadesAVMB\estruturaVSStudio\obj\Debug\net7.0\estruturaVisualStudio.csproj.AssemblyReference.cache
 C:\Users\XicueXuxi\Desktop\Repositorios\AtividadesAVMB\estruturaVSStudio\obj\Debug\net7.0\estruturaVisualStudio.GeneratedMSBuildEditorConfig.editorconfig
@@ -55,3 +54,4 @@ C:\Users\XicueXuxi\Desktop\Repositorios\AtividadesAVMB\estruturaVSStudio\bin\Deb
 C:\Users\XicueXuxi\Desktop\Repositorios\AtividadesAVMB\estruturaVSStudio\obj\Debug\net7.0\estruturaVisualStudio.csproj.CopyComplete
 C:\Users\XicueXuxi\Desktop\Repositorios\AtividadesAVMB\estruturaVSStudio\obj\Debug\net7.0\estruturaVisualStudio.genruntimeconfig.cache
 C:\Users\XicueXuxi\Desktop\Repositorios\AtividadesAVMB\estruturaVSStudio\obj\Debug\net7.0\ref\estruturaVisualStudio.dll
+C:\Users\eduardo.palharini\Desktop\AtividadesAVMB\estruturaVSStudio\bin\Debug\net7.0\CsvHelper.dll
