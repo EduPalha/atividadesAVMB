@@ -2,16 +2,22 @@ using System;
 
 namespace ImersaoAVMB
 {
-    public class Televisao
+    public class Livro
     {
-        public int idCanalTV;
-        public string nomeCanal;
-        public string tipo; //aberto ou fechado
+        public int idLivro;
+        public string titulo;
+        public string nomeAutor;
+        public int nPaginas;
+        public int anoPublicacao;
+        public long isbn;
+        public int idEditora;
+        public int idCategoria;
+
         public int numeroCanal;
 
-        public Televisao()
+        public Livro()
         {
-            Console.WriteLine("Iniciando Classe Televisao.....\n");
+            Console.WriteLine("Iniciando Classe Livro.....\n");
         }
 
 

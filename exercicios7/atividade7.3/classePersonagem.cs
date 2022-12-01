@@ -19,6 +19,11 @@ namespace ImersaoAVMB
         private int jogador1;
         private int jogador2;
 
+        public Personagem()
+        {
+
+        }
+
         // public int comparacao(int atributo, int j1, int j2)
         // {
         //     this.jogador1 = j1;

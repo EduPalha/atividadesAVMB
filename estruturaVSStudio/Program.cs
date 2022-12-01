@@ -1,127 +1,75 @@
 ﻿/*
-3 - Crie uma classe chamada Personagem. Defina seus atributos, mas 
-dentre eles deve conter: Nome, posição e itens coletados, no mínimo. 
-Crie métodos que representem seu comportamento, ou seja, o que o seu 
-personagem vai fazer no jogo.
+6 - Escreva uma classe Aluno contendo todos os atributos de um aluno. 
+Faça métodos para apresentar os dados. Faça a leitura pelo teclado dos 
+atributos e crie um construtor para fazer o instanciamento.
 */
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.IO;
+using System.Security.Cryptography;
 
 namespace ImersaoAVMB
 {
     class Program
     {
+        private static RNGCryptoServiceProvider rngCsp = new RNGCryptoServiceProvider();
+
+        public string hashSenha()
+        {
+            byte[] salt = new byte[16];
+            rngCsp.GetBytes(salt);
+
+            string senha1, senha2;
+            while (true)
+            {
+                Console.WriteLine("Informe a senha");
+                senha1 = Console.ReadLine();
+
+                Console.WriteLine("Repita a senha");
+                senha2 = Console.ReadLine();
+                if (senha1 == senha2) break;
+            }
+
+            var pbkdf2 = new Rfc2898DeriveBytes(senha1, salt, 1000);
+
+            byte[] hash = pbkdf2.GetBytes(20);
+            byte[] hashBytes = new byte[36];
+
+            Array.Copy(salt, 0, hashBytes, 0, 16);
+            Array.Copy(hash, 0, hashBytes, 16, 20);
+
+            string hashSenha = Convert.ToBase64String(hashBytes);
+
+            Console.WriteLine($"\nHash da senha gerado : {hashSenha}");
+            Console.ReadKey();
+
+            return hashSenha;
+        }
 
         static void Main(string[] args)
         {
-            int opcao = 0;
-            string arquivo = "C:\\Users\\eduardo.palharini\\Desktop\\atividadesAVMB\\estruturaVSStudio\\personagens.txt";
-            StreamWriter sw;
-            StreamReader sr;
+            Console.Write("Titulo: ");
+            string tituloLivro = Console.ReadLine() + "";
 
-            try
-            {
-                while (true)
-                {
-                    if (opcao == 4)
-                    {
-                        break;
-                    }
-                    Console.WriteLine("----SUPER TRUNFO SUPER HERÓIS----");
-                    Console.WriteLine("1 - JOGAR");
-                    Console.WriteLine("2 - Cadastrar");
-                    Console.WriteLine("3 - Listar");
-                    Console.WriteLine("4 - Sair");
-                    Console.Write("Digite sua opcao: ");
-                    opcao = int.Parse(Console.ReadLine() + "");
+            Console.Write("Nome Autor: ");
+            string nomeAutor = Console.ReadLine() + "";
 
-                    switch (opcao)
-                    {
-                        case 1:
-                            break;
-                        case 2:
-                            sw = new StreamWriter(arquivo, true, Encoding.UTF8);
-                            Personagem p = new Personagem();
-                            try
-                            {
-                                Console.Write("\nPersonagem: ");
-                                p.nomePersonagem = (Console.ReadLine() + "").ToUpper();
-                                Console.Write("Lealdade: ");
-                                p.lealdade = int.Parse(Console.ReadLine() + "");
-                                Console.Write("Força: ");
-                                p.forca = int.Parse(Console.ReadLine() + "");
-                                Console.Write("Heroismo: ");
-                                p.heroismo = int.Parse(Console.ReadLine() + "");
-                                Console.Write("Poder: ");
-                                p.poder = int.Parse(Console.ReadLine() + "");
-                                Console.Write("Pontuação Geral: ");
-                                p.pontuacaoGeral = int.Parse(Console.ReadLine() + "");
-                                sw.WriteLine(p.nomePersonagem + ";" + p.lealdade + ";"
-                                            + p.forca + ";" + p.heroismo + ";" +
-                                            p.poder + ";" + p.pontuacaoGeral);
-                                sw.Close();
-                            }
-                            catch (Exception e)
-                            {
-                                Console.WriteLine("Problema ao gravar o personagem no arquivo;");
-                            }
+            Console.Write("Número de páginas: ");
+            int nPaginas = int.Parse(Console.ReadLine() + "");
 
-                            break;
+            Console.Write("Ano Publicação: ");
+            int anoPublicacao = int.Parse(Console.ReadLine() + "");
 
-                        case 3:
-                            Console.WriteLine("\n-------Personagens cadastrados--------\n");
-                            Personagem p1 = new Personagem();
-                            
-                            try{
-                                sr = new StreamReader(arquivo);
+            Console.Write("ISBN: ");
+            long isbn = long.Parse(Console.ReadLine() + "");
 
-                                String linha = sr.ReadLine();
-                                string[] auxiliar = new string[6]; //usada para splitar
+            Console.Write("ID Editora: ");
+            int idEditora = int.Parse(Console.ReadLine() + "");
 
-                                while (linha != null)
-                                {
-                                    auxiliar = linha.Split(";");
-                                    
-                                    p1.nomePersonagem = auxiliar[0];
-                                    p1.lealdade = int.Parse(auxiliar[1]);
-                                    p1.forca = int.Parse(auxiliar[2]);
-                                    p1.heroismo = int.Parse(auxiliar[3]);
-                                    p1.poder = int.Parse(auxiliar[4]);
-                                    p1.pontuacaoGeral = int.Parse(auxiliar[5]);
+            Console.Write("ID Categoria: ");
+            int idCategoria = int.Parse(Console.ReadLine() + "");
 
-                                    Console.WriteLine(p1.nomePersonagem + "\nLealdade: "
-                                    + p1.lealdade + "\nForça: " + p1.forca + "\nHeroismo: "
-                                    + p1.heroismo + "\nPoder: " + p1.poder + "\nPontuação Geral: "
-                                    + p1.pontuacaoGeral + "\n");
+            string senha = hashSenha();
 
-                                    linha = sr.ReadLine() + "";
-                                }
-                                sr.Close();
-                            }
-                            catch(Exception e){
-                                Console.WriteLine("Erro: " + e);
-                            }
-                            
-                            Console.WriteLine("_______________________________________\n");
-                            break;
-
-                        case 4:
-                            break;
-                    }
-                }
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine("Exceção: " + e);
-            }
-            finally
-            {
-                Console.WriteLine("Saindo do jogo...");
-            }
+            //var li = new Livro(tituloLivro, nomeAutor, nPaginas, anoPublicacao, isbn, idEditora, idCategoria);
         }
     }
 }
