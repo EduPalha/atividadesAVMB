@@ -1,8 +1,7 @@
 ﻿/*
-3 - Crie uma classe chamada Personagem. Defina seus atributos, mas 
+7 - Crie uma classe chamada Personagem. Defina seus atributos, mas 
 dentre eles deve conter: Nome, posição e itens coletados, no mínimo. 
-Crie métodos que representem seu comportamento, ou seja, o que o seu 
-personagem vai fazer no jogo.
+Crie construtor e faça a leitura dos atributos pelo teclado.
 */
 using System;
 using System.Collections.Generic;
@@ -37,7 +36,7 @@ namespace ImersaoAVMB
 
             while (true)
             {
-                if (opcaoMenu == 3)
+                if (opcaoMenu == 4)
                 {
                     break;
                 }
@@ -46,8 +45,8 @@ namespace ImersaoAVMB
                 Console.WriteLine("----SUPER TRUNFO SUPER HERÓIS----");
                 Console.WriteLine("1 - JOGAR");
                 Console.WriteLine("2 - Cadastrar");
-                //Console.WriteLine("3 - Listar");
-                Console.WriteLine("3 - Sair");
+                Console.WriteLine("3 - Listar");
+                Console.WriteLine("4 - Sair");
                 Console.Write("Digite sua opcao: ");
                 opcaoMenu = int.Parse(Console.ReadLine() + "");
 
@@ -176,43 +175,43 @@ namespace ImersaoAVMB
                         Console.WriteLine("Gravado com SUCESSO!");
                         break;
 
-                    // case 3:
-                    //     Console.WriteLine("\n-------Personagens cadastrados--------\n");
-                    //     try
-                    //     {
-
-                    //         linha = sr.ReadLine();
-                    //         auxiliar = new string[6];
-
-                    //         while (linha != null)
-                    //         {
-                    //             auxiliar = linha.Split(";");
-
-                    //             p1.nomePersonagem = auxiliar[0];
-                    //             p1.lealdade = int.Parse(auxiliar[1]);
-                    //             p1.forca = int.Parse(auxiliar[2]);
-                    //             p1.heroismo = int.Parse(auxiliar[3]);
-                    //             p1.poder = int.Parse(auxiliar[4]);
-                    //             p1.pontuacaoGeral = int.Parse(auxiliar[5]);
-
-                    //             Console.WriteLine(p1.nomePersonagem + "\nLealdade: "
-                    //             + p1.lealdade + "\nForça: " + p1.forca + "\nHeroismo: "
-                    //             + p1.heroismo + "\nPoder: " + p1.poder + "\nPontuação Geral: "
-                    //             + p1.pontuacaoGeral + "\n");
-
-                    //             linha = sr.ReadLine() + "";
-                    //         }
-                    //         sr.Close();
-                    //     }
-                    //     catch (Exception e)
-                    //     {
-                    //         Console.WriteLine("Erro: " + e);
-                    //     }
-
-                    //     Console.WriteLine("_______________________________________\n");
-                    //     break;
-
                     case 3:
+                        Console.WriteLine("\n-------Personagens cadastrados--------\n");
+                        try
+                        {
+                            sr = new StreamReader(arquivo);
+                            linha = sr.ReadLine();
+                            auxiliar = new string[6];
+
+                            while (linha != null)
+                            {
+                                auxiliar = linha.Split(";");
+
+                                p1.nomePersonagem = auxiliar[0];
+                                p1.lealdade = int.Parse(auxiliar[1]);
+                                p1.forca = int.Parse(auxiliar[2]);
+                                p1.heroismo = int.Parse(auxiliar[3]);
+                                p1.poder = int.Parse(auxiliar[4]);
+                                p1.pontuacaoGeral = int.Parse(auxiliar[5]);
+
+                                Console.WriteLine(p1.nomePersonagem + "\nLealdade: "
+                                + p1.lealdade + "\nForça: " + p1.forca + "\nHeroismo: "
+                                + p1.heroismo + "\nPoder: " + p1.poder + "\nPontuação Geral: "
+                                + p1.pontuacaoGeral + "\n");
+
+                                linha = sr.ReadLine() + "";
+                            }
+                            sr.Close();
+                        }
+                        catch (Exception e)
+                        {
+                            Console.WriteLine("Erro: " + e);
+                        }
+
+                        Console.WriteLine("_______________________________________\n");
+                        break;
+
+                    case 4:
                         break;
                 }
             }
