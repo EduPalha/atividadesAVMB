@@ -1,14 +1,11 @@
 ﻿/*
-9 - Crie uma classe chamada Motor que possua três atributos visíveis 
-apenas na própria classe, são eles: nomeFabricante, potência e tipo.
-
-Também deverão ser criados dois métodos visíveis a qualquer classe, 
-sendo que um desses métodos deverá associar valores aos atributos e 
-outro método deverá retornar o conteúdo desses atributos. 
-
-Em uma outra classe deverá ser instanciada a classe Motor e apresentado na tela os 
-valores dos atributos retornados pelo método correspondente da classe 
-Motor
+12 - Crie uma classe Personagem com os atributos nome, posição x, 
+posição y, HP entre outros de sua preferência.
+Além disso, deve possuir o método RetornaPosiçao que retorna a posição x 
+e y do personagem. Faça também com que possua os métodos abstratos 
+Movimentar, Atacar.
+Crie uma classe NPC e PersonagemJogavel que implemente os métodos 
+abstratos.
 */
 using System;
 
@@ -18,18 +15,51 @@ namespace ImersaoAVMB
     {
         static void Main(string[] args)
         {
-            Console.Write("Nome Fabricante: ");
+            int opcao = 0;
+            float posicaoPX, posicaoPY, posicaoNX, posicaoNY;
+
+            Console.Write("Nome Personagem");
             string nome = Console.ReadLine() + "";
+            Personagem p = new Personagem(nome);
 
-            Console.Write("Potência em CV: ");
-            int potencia = int.Parse(Console.ReadLine() + "");
+            NPC npc = new NPC();
+            npc.nome = "BOT" + npc.nBot;
 
-            Console.Write("Tipo de veículo: ");
-            string tipo = Console.ReadLine() + "";
+            while (true)
+            {
+                Console.Write("BATALHA\n0-Sair\n1-Personagem\n2-BOT");
+                opcao = int.Parse(Console.ReadLine() + "");
+                if (opcao == 0) break;
+                else if (opcao == 1)
+                {
+                    Console.Write("Digite a posição X do personagem: ");
+                    posicaoPX = float.Parse(Console.ReadLine() + "");
+                    Console.Write("Digite a posição Y do personagem: ");
+                    posicaoPY = float.Parse(Console.ReadLine() + "");
+                    p.retornaPosicao(posicaoPX, posicaoPY);
+                }
+                else
+                {
+                    posicaoNX = npc.movimentarX;
+                    posicaoNY = npc.movimentarY;
+                }
 
-            Motor m = new Motor(nome, potencia, tipo);
-            m.setMotor(nome, potencia, tipo);
+                if(posicaoPX == posicaoNX && posicaoPY == posicaoNY)
+                {
+                    Console.WriteLine("0-Faca\n1-Tiro\n2-Chute\n3-Soco\n4-KameHameHa");
+                    Console.Write("Ataque do personagem: ");
+                    int movimento = int.Parse(Console.ReadLine() + "");
+                    Console.WriteLine("RETORNO Personagem: " + p.atacar(movimento));
 
+                    Console.WriteLine("PERSONAGEM: " + p.atacar);
+                    Console.WriteLine("NPC: " + npc.atacar);
+                }
+                else
+                {
+                    Console.WriteLine("Não teve combate!");
+                }
+            }
+            Console.WriteLine("Saindo do sistema...");
         }
     }
 }
