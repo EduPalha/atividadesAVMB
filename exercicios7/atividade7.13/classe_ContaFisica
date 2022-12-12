@@ -1,0 +1,21 @@
+using System;
+
+namespace ImersaoAVMB
+{
+    public class ContaFisica: ContaBancaria
+    {
+        public int numeroConta = 1234;
+        public double saldo;
+
+        public double sacar(double saldo, double valor)
+        {
+            return saldo - valor;
+        }
+
+        public double depositar(double saldo, double valor)
+        {
+            return saldo + valor;
+        }
+
+    }
+}
