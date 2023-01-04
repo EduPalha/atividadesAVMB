@@ -19,7 +19,7 @@ namespace FinalProject
         IDictionary<string, string> user = new Dictionary<string, string>
         {
             { "usuario","senha" },
-            { "leo", "pass" }
+            { "eduardo", "Avmb2023*" }
         };
 
         public JWTAuthenticationManager(string tokenKey)
